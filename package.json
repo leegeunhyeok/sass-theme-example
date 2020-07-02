@@ -1,0 +1,22 @@
+{
+  "name": "sass-theme-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "node-sass --w scss/index.scss -o css/",
+    "build": "node-sass scss/index.scss -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leegeunhyeok/sass-theme-example.git"
+  },
+  "author": "Geunhyeok LEE <dev.ghlee@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leegeunhyeok/sass-theme-example/issues"
+  },
+  "homepage": "https://github.com/leegeunhyeok/sass-theme-example#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

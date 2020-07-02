@@ -1,0 +1,64 @@
+@import 'theme';
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "-apple-system", "BlinkMacSystemFont","Apple SD Gothic Neo",
+  "Inter", "Spoqa Han Sans", "Segoe UI",
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Sans-Serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@include theme {
+  #app {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: t('background');
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: .3s;
+            transition: .3s;
+  
+    div {
+      text-align: center;
+  
+      h2 {
+        color: t('textPrimary');
+      }
+  
+      a {
+        cursor: pointer;
+        display: block;
+        margin: 1rem 0;
+        color: t('textSecondary');
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+  
+      button {
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 1rem;
+        padding: .5rem 1rem;
+        color: t('accentText');
+        background-color: t('accent');
+  
+        &:hover {
+          background-color: darken(t('accent'), 15%);
+        }
+      }
+    }
+  }
+}
